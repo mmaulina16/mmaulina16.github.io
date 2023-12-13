@@ -1,0 +1,107 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 2000px;
+}
+
+.jumbotron {
+  padding-top: 2rem;
+  background-color: #e2e2e2;
+}
+
+#projek {
+  background-color: #e2e2e2;
+  height: 800px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#large-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* Penyesuaian untuk bagian Projek Saya */
+#projek img {
+  cursor: pointer;
+}
+
+#projek .card {
+  transition: transform 0.2s;
+}
+
+#projek .card:hover {
+  transform: scale(1.1);
+}
+
+#jasacetak {
+  background-color: #e2e2e2;
+}
+
+.scrollable-column {
+  width: 100%; /* Atur lebar kolom sesuai yang Anda inginkan */
+  height: 50vh;
+  white-space: nowrap; /* Mencegah teks melipat (jika diperlukan) */
+  overflow-y: auto; /* Membuat scroll horizontal saat konten melebihi lebar */
+}
+
+#kontak {
+  background-color: #000;
+  color: #fff;
+}
+
+.link-underline-opacity-0 {
+  position: relative;
+  text-decoration: none; /* Menghapus garis bawah default */
+}
+
+#up {
+  padding: 10px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+#up a {
+  color: #808080;
+  text-decoration: none;
+}
+
+#up a:hover {
+  color: #afafaf;
+}
+
+#up i {
+  font-size: 40px;
+}
+
+h4 {
+  color: #474747;
+}
+
+p {
+  font-size: 15px;
+}

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Saya Siapa?</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm" style="background-color: #343434">
+      <div class="container">
+        <a class="navbar-brand" href="#">Portofolio Saya</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!--ms-auto berfungsi agar menu menu mepet ke kanan-->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#jumbotron">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projek">Projek</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#">Katalog</a>
+              <!-- <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Katalog</button> -->
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#jasadesain">Jasa Desain</a></li>
+                <li><a class="dropdown-item" href="#jasacetak">Jasa Cetak</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- Akhir Navbar -->
+
+  <!-- Jumbotron -->
+  <section class="jumbotron">
+    <div class="container text-center">
+      <!-- <img src="img/mayaa.png" alt="Maya Maulina" width="200" class="rounded-circle img-thumbnail" /> -->
+      <h5>Halo, Salam Kenal! Saya..</h5>
+      <h1 class="display-4">Maya Maulina</h1>
+      <p class="lead">Mahasiswi & Desainer Grafis</p>
+      <br />
+    </div>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,64L60,80C120,96,240,128,360,133.3C480,139,600,117,720,133.3C840,149,960,203,1080,192C1200,181,1320,107,1380,69.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg> -->
+  </section>
+  <!-- Akhir Jumbotron -->
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row mt-5 mb-3 text-center">
+        <div class="col">
+          <h3>Tentang Saya</h3>
+        </div>
+      </div>
+      <div class="row justify-content-start fs-5">
+        <div class="col-6 mb-3">
+          <p>Saya Seorang Mahasiswi S1 Teknik Informatika di Universitas Islam Kalimantan Muhammad Arsyad Al-Banjari.
+            Terlepas dari itu, saya senang dengan dunia kreatif. Saya mampu mengaplikasikan Pixellab, Figma, Canva, dan
+            sebagainya.</p>
+        </div>
+        <div class="col-6 mb-3">
+          <p>Saya juga bagian dari Komunitas Ruang Edit, Tim Kreatif di Komunitas Typography Borneo, dan Anggota Divisi
+            Opini dan Media di UKM KDK Al-Karomah Universitas Islam Kalimantan MAB.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir About -->
+
+  <!-- Projek -->
+  <section id="projek">
+    <div class="container">
+      <div class="row text-center mt-3">
+        <div class="col mt-5 mb-4">
+          <h3>Projek Desain</h3>
+        </div>
+      </div>
+      <div class="col" style="overflow-x: auto; white-space: auto; height: 650px;">
+        <div class="row">
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/oprec.jpg')">
+              <img src="img/oprec.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster Open Recruitment Panitia Ramadan RE Kalsel</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/oprec2.jpg')">
+              <img src="img/oprec2.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster Open Recruitment Panitia Anniversary Ruang Edit</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/karajitu.jpg')">
+              <img src="img/karajitu.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster Karajitu Ruang Edit Jilid 7</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/rewindre7.jpg')">
+              <img src="img/rewindre7.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster Rewind Ruang Edit Jilid 7 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/maulid.jpg')">
+              <img src="img/maulid.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster Typography Borneo Memperingati Maulid Nabi Saw.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/eid.jpg')">
+              <img src="img/eid.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster Idul Adha Typography Borneo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/eidadha.png')">
+              <img src="img/eidadha.png" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster Idul Adha KDK Al-Karomah</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/merdeka.png')">
+              <img src="img/merdeka.png" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster Typography Borneo Memperingati Hari Kemerdekaan
+                  Indonesia</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/obos2.jpg')">
+              <img src="img/obos2.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster OBOS Typography Borneo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/obos8.jpg')">
+              <img src="img/obos8.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster OBOS Typography Borneo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/obos3.jpg')">
+              <img src="img/obos3.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster OBOS Typography Borneo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/obos4.png')">
+              <img src="img/obos4.png" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster OBOS Typography Borneo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/obos5.png')">
+              <img src="img/obos5.png" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster OBOS Typography Borneo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/obos6.jpg')">
+              <img src="img/obos6.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster OBOS Typography Borneo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/obos.jpg')">
+              <img src="img/obos.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster OBOS Typography Borneo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/obos9.jpg')">
+              <img src="img/obos9.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster OBOS Typography Borneo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/obos7.jpg')">
+              <img src="img/obos7.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster OBOS Typography Borneo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/live.jpg')">
+              <img src="img/live.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Poster Live Seminar Puan Day 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/carousel3.jpg')">
+              <img src="img/carousel3.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Feed Instagram Ruang Edit Anniversary 3rd</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/carousel2.jpg')">
+              <img src="img/carousel2.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Feed Instagram Ruang Edit Anniversary 3rd</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/carousel1.jpg')">
+              <img src="img/carousel1.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Feed Instagram Ruang Edit Anniversary 3rd</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/feedig5.jpg')">
+              <img src="img/feedig5.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Feed Instagram Seminar Puan Day 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/feedig4.jpg')">
+              <img src="img/feedig4.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Feed Instagram Seminar Puan Day 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/feedig3.jpg')">
+              <img src="img/feedig3.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Feed Instagram Seminar Puan Day 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/feedig6.jpg')">
+              <img src="img/feedig6.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Feed Instagram Seminar Puan Day 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/kodiv.jpg')">
+              <img src="img/kodiv.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Hasil Pelatihan Desain Kodiv</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/kodiv2.jpg')">
+              <img src="img/kodiv2.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Hasil Pelatihan Desain Kodiv</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/feedkdk3.jpg')">
+              <img src="img/feedkdk3.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Feed Instagram KDK Al-Karomah</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/feedkdk2.jpg')">
+              <img src="img/feedkdk2.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Feed Instagram KDK Al-Karomah</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/feedkdk4.jpg')">
+              <img src="img/feedkdk4.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Feed Instagram KDK Al-Karomah</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/karimah3.jpg')">
+              <img src="img/karimah3.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Pamflet Karimah KDK Al-Karomah Banjarbaru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/karimah.jpg')">
+              <img src="img/karimah.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Pamflet Karimah KDK Al-Karomah Banjarbaru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/karimah2.jpg')">
+              <img src="img/karimah2.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Pamflet Karimah KDK Al-Karomah Banjarbaru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/karimah5.png')">
+              <img src="img/karimah5.png" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Pamflet Karimah KDK Al-Karomah Banjarbaru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/tahsin.jpg')">
+              <img src="img/tahsin.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Pamflet Tahsin KDK Al-Karomah Banjarbaru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/feedig.jpg')">
+              <img src="img/feedig.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Feed Instagram Menu Makanan Warung Sederhana</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/wrg.jpg')">
+              <img src="img/wrg.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Feed Instagram Menu Makanan Warung Sederhana</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-8 mb-4">
+            <div class="card" onclick="openImage('img/spanduk.jpg')">
+              <img src="img/spanduk.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Spanduk Warung Makan Sederhana</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/bannerkdk.png')">
+              <img src="img/bannerkdk.png" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Banner Kegiatan KDK Al-Karomah</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/sertifikat.jpg')">
+              <img src="img/sertifikat.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Sertifikat Seminar Puan Day 2022</p>
+              </div>
+            </div>
+            <!-- </div>
+          <div class="col-4 mb-4"> -->
+            <div class="card mt-4" onclick="openImage('img/ganci2.png')">
+              <img src="img/ganci2.png" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Ganci Kegiatan Gabungan KDK Al-Karomah</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card" onclick="openImage('img/sertifikat2.jpg')">
+              <img src="img/sertifikat2.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Sertifikat Kegiatan Mentoring KDK Al-Karomah</p>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="col-4 mb-4"> -->
+            <div class="card mt-4" onclick="openImage('img/ganci1.png')">
+              <img src="img/ganci1.png" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Ganci Kegiatan Gabungan KDK Al-Karomah</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Projek -->
+
+  <!-- Overlay untuk tampilan gambar besar -->
+  <div id="overlay" onclick="closeImage()">
+    <div id="image-container">
+      <img id="large-image" src="" alt="Large Image">
+    </div>
+  </div>
+
+  <!-- Jasa Desain -->
+  <section id="jasadesain">
+    <div class="container">
+      <div class="row mt-5 mb-4 text-center">
+        <div class="col">
+          <h3>Jasa Desain</h3>
+          <p>
+            Halo, bagi kalian yang lagi butuh desain cepat dan ramah dikantong, <br> bisa banget pesan disini^^
+          </p>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5">
+        <div class="col-6 mb-4">
+          <h5>Poster/Banner/Spanduk</h5>
+          <ul>
+            <li>Harga
+              <p>Mulai dari Rp.20.000 - Rp.50.000</p>
+            </li>
+            <li>File
+              <p>Dikirim dalam format jpg dan pdf</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 mb-4">
+          <h5>Undangan Digital</h5>
+          <p>(Tasyakuran Aqiqah, Ulang Tahun, Pernikahan, dll)</p>
+          <ul>
+            <li>Harga
+              <p>Mulai dari Rp.20.000 - Rp.50.000</p>
+            </li>
+            <li>File
+              <p>Dikirim dalam format jpg dan pdf</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 mb-4">
+          <h5>Feed Instagram</h5>
+          <ul>
+            <li>Harga
+              <p>Mulai dari Rp.5.000 - Rp.20.000 per slide</p>
+            </li>
+            <li>File
+              <p>Dikirim dalam format jpg atau rar</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 mb-4">
+          <h5>Sertifikat</h5>
+          <ul>
+            <li>Harga
+              <p>Mulai dari Rp.20.000 - Rp.30.000</p>
+            </li>
+            <li>Harga tambahan (opsional)
+              <p>include pengisian nama Rp.500/nama</p>
+            </li>
+            <li>File
+              <p>Dikirim dalam format jpg atau rar</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 mb-4">
+          <h5>ID Card</h5>
+          <ul>
+            <li>Harga
+              <p>Mulai dari Rp.20.000 - Rp.30.000</p>
+            </li>
+            <li>Harga tambahan (opsional)
+              <p>include pengisian nama, foto, dll Rp.500/nama</p>
+            </li>
+            <li>File
+              <p>Dikirim dalam format jpg atau rar</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Jasa Desain -->
+
+  <!-- Jasa Cetak -->
+  <section id="jasacetak">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col mt-5 mb-4 ">
+          <h3>Jasa Cetak</h3>
+          <p>Halo, bagi kalian yang mau cetak berkas, stiker, foto, dll bisa banget disini^^ <br></p>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5">
+        <div class="col-6 mb-4">
+          <h5>Berkas</h5>
+          <ul>
+            <li>Hitam Putih HVS A4/F4 : Rp.700/lembar</li>
+            <li>Warna HVS A4/F4 : Rp.1.000/lembar</li>
+          </ul>
+        </div>
+        <div class="col-6 mb-4">
+          <h5>Stiker</h5>
+          <ul>
+            <li>Glossy A4 : Rp.8.000/lembar A4</li>
+            <li>Cutting (opsional) : Rp.300/stiker</li>
+          </ul>
+        </div>
+        <div class="col-6 mb-4">
+          <h5>Foto</h5>
+          <p>Coming soon..</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Jasa Cetak -->
+
+  <!-- Katalog -->
+
+  <!-- Undangan Tasyakuran Aqiqah Digital -->
+  <!-- <section id="katalog">
+    <div class="container">
+      <div class="row text-center mt-3">
+        <div class="col mt-5 mb-4">
+          <h4>Undangan Aqiqah Digital (MP4)</h4>
+          <p>Rp.30.000 - Rp.45.000</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 mb-4">
+          <div class="card">
+            <video controls>
+              <source src="video/Aqiqah.mp4" type="video/mp4" />
+              Browsermu tidak mendukung tag ini, silahkan upgrade!
+            </video>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Undangan Aqiqah Digital</b> <br />
+                Kode A01
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4">
+          <div class="card">
+            <video controls>
+              <source src="video/Aqiqah.mp4" type="video/mp4" />
+              Browsermu tidak mendukung tag ini, silahkan upgrade!
+            </video>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Undangan Aqiqah Digital</b> <br />
+                Kode A01
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    Akhir Undangan Tasyakuran Aqiqah Digital -->
+  <!-- </section> -->
+  <!-- Akhir Katalog -->
+
+  <!-- Kontak -->
+  <section id="kontak">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col mt-4 mb-3">
+          <h3>Kontak Saya</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-3 mb-4">
+          <a href="https://wa.me/628115128607" class="link-light link-underline link-underline-opacity-0"
+            target="_blank">
+            <i class="bi bi-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+        <div class="col-3 mb-4">
+          <a href="https://shopee.co.id/gamiskiyowo" class="link-light link-underline link-underline-opacity-0"
+            target="_blank">
+            <i class="bi bi-bag"></i> Shopee
+          </a>
+        </div>
+        <div class="col-3 mb-4">
+          <a href="https://instagram.com/mmaulina16/" class="link-light link-underline link-underline-opacity-0"
+            target="_blank">
+            <i class="bi bi-instagram"></i> Instagram
+          </a>
+        </div>
+        <div class="col-3 mb-4">
+          <a href="https://id.pinterest.com/mmaulina16/" class="link-light link-underline link-underline-opacity-0"
+            target="_blank">
+            <i class="bi bi-pinterest"></i> Pinterest
+          </a>
+        </div>
+        <!-- COPYRIGHT -->
+        <p class="text-center">&copy; Maya Maulina - 2023</p>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Kontak -->
+
+  <!-- TOMBOL UP -->
+  <div id="up"><a href="#navbar"><i class="bi bi-arrow-up-square-fill"></i></a></div>
+
+  <!-- JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+  <!-- JAVASCRIPT IMAGE -->
+  <script>
+    // Fungsi untuk membuka gambar
+    function openImage(imagePath) {
+      var largeImage = document.getElementById('large-image');
+      largeImage.src = imagePath;
+
+      var overlay = document.getElementById('overlay');
+      overlay.style.display = 'flex';
+    }
+
+    // Fungsi untuk menutup tampilan gambar besar
+    function closeImage() {
+      var overlay = document.getElementById('overlay');
+      overlay.style.display = 'none';
+    }
+  </script>
+
+  <!-- JAVASCRIPT BACK TO TOP -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('up');
+
+      // Tampilkan atau sembunyikan tombol berdasarkan posisi scroll
+      window.addEventListener('scroll', function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          btn.style.visibility = 'visible';
+        } else {
+          btn.style.visibility = 'hidden';
+        }
+      });
+
+      // Gulir kembali ke atas saat tombol diklik
+      btn.addEventListener('click', function () {
+        document.body.scrollTop = 0; // Untuk Safari
+        document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE, dan Opera
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
