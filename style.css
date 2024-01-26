@@ -7,9 +7,9 @@ body {
   background-color: #B6BBC4;
 }
 
-#projek {
+#desain {
   background-color: #B6BBC4;
-  height: 800px;
+  height: 970px;
 }
 
 img {
@@ -41,16 +41,25 @@ img {
 }
 
 /* Penyesuaian untuk bagian Projek Saya */
-#projek img {
+#desain img {
   cursor: pointer;
 }
 
-#projek .card {
+#desain .card {
   transition: transform 0.2s;
 }
 
-#projek .card:hover {
+#desain .card:hover {
   transform: scale(1.1);
+}
+
+#video {
+  height: 970px;
+}
+
+#sertifikat {
+  background-color: #B6BBC4;
+  height: 830px;
 }
 
 .scrollable-column {
