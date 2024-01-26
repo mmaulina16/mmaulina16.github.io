@@ -35,8 +35,14 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#jumbotron">Beranda</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projek">Projek</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#projek" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projek
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#desain">Desain</a></li>
+                <li><a class="dropdown-item" href="#video">Video</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#sertifikat">Sertifikat</a>
@@ -95,15 +101,16 @@
   <!-- Akhir About -->
 
   <!-- Projek -->
-  <section id="projek">
+  <section id="desain">
+    <!-- Desain -->
     <div class="container">
       <div class="row text-center mt-3">
         <div class="col mt-5 mb-4">
-          <h3>Projek Saya</h3>
+          <h3>Projek Desain</h3>
           <hr>
         </div>
       </div>
-      <div class="col" style="overflow-x: auto; white-space: auto; height: 650px;">
+      <div class="col" style="overflow-x: auto; white-space: auto; height: 800px;">
         <div class="row">
           <div class="col-md-4 mb-4">
             <div class="card" onclick="openImage('img/oprec.jpg')">
@@ -379,10 +386,66 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
+            <div class="card" onclick="openImage('img/karimah6.jpg')">
+              <img src="img/karimah6.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Pamflet Karimah KDK Al-Karomah Banjarbaru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card" onclick="openImage('img/mentoring,jpg')">
+              <img src="img/mentoring.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Pamflet Karimah KDK Al-Karomah Banjarbaru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card" onclick="openImage('img/mentoring2.jpg')">
+              <img src="img/mentoring2.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Pamflet Karimah KDK Al-Karomah Banjarbaru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
             <div class="card" onclick="openImage('img/tahsin.jpg')">
               <img src="img/tahsin.jpg" class="card-img-top" alt="" />
               <div class="card-body">
                 <p class="card-text" style="font-size: 15px">Pamflet Tahsin KDK Al-Karomah Banjarbaru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card" onclick="openImage('img/ganci2.png')">
+              <img src="img/ganci2.png" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Ganci Kegiatan Gabungan KDK Al-Karomah</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card" onclick="openImage('img/ganci1.png')">
+              <img src="img/ganci1.png" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Ganci Kegiatan Gabungan KDK Al-Karomah</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card" onclick="openImage('img/sertifikat.jpg')">
+              <img src="img/sertifikat.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Sertifikat Seminar Puan Day 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card" onclick="openImage('img/sertifikat2.jpg')">
+              <img src="img/sertifikat2.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Sertifikat Kegiatan Mentoring KDK Al-Karomah</p>
               </div>
             </div>
           </div>
@@ -402,9 +465,17 @@
               </div>
             </div>
           </div>
-          <div class="col-8 mb-4">
+          <div class="col-12 mb-4">
             <div class="card" onclick="openImage('img/spanduk.jpg')">
               <img src="img/spanduk.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Desain Spanduk Warung Makan Sederhana</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-4">
+            <div class="card" onclick="openImage('img/spandukkdk.jpg')">
+              <img src="img/spandukkdk.jpg" class="card-img-top" alt="" />
               <div class="card-body">
                 <p class="card-text" style="font-size: 15px">Desain Spanduk Warung Makan Sederhana</p>
               </div>
@@ -418,35 +489,119 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Desain -->
+
+  <!-- Video -->
+  <section id="video">
+    <div class="container">
+      <div class="row text-center mt-3">
+        <div class="col mt-5 mb-4">
+          <h3>Projek Video</h3>
+          <hr>
+        </div>
+      </div>
+      <div class="col" style="overflow-x: auto; white-space: auto; height: 800px;">
+        <div class="row">
           <div class="col-md-4 mb-4">
-            <div class="card" onclick="openImage('img/sertifikat.jpg')">
-              <img src="img/sertifikat.jpg" class="card-img-top" alt="" />
+            <div class="card">
+              <video controls>
+                <source src="vid/masker.mp4" type="video/mp4" />
+                Browsermu tidak mendukung tag ini, silahkan upgrade!
+              </video>
               <div class="card-body">
-                <p class="card-text" style="font-size: 15px">Sertifikat Seminar Puan Day 2022</p>
-              </div>
-            </div>
-            <!-- </div>
-          <div class="col-md-4 mb-4"> -->
-            <div class="card mt-4" onclick="openImage('img/ganci2.png')">
-              <img src="img/ganci2.png" class="card-img-top" alt="" />
-              <div class="card-body">
-                <p class="card-text" style="font-size: 15px">Desain Ganci Kegiatan Gabungan KDK Al-Karomah</p>
+                <p class="card-text" style="font-size: 15px">Katalog Masker</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card" onclick="openImage('img/sertifikat2.jpg')">
-              <img src="img/sertifikat2.jpg" class="card-img-top" alt="" />
+            <div class="card">
+              <video controls>
+                <source src="vid/mental.mp4" type="video/mp4" />
+                Browsermu tidak mendukung tag ini, silahkan upgrade!
+              </video>
               <div class="card-body">
-                <p class="card-text" style="font-size: 15px">Sertifikat Kegiatan Mentoring KDK Al-Karomah</p>
+                <p class="card-text" style="font-size: 15px">Tips Kesehatan Mental</p>
               </div>
             </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-4 mb-4"> -->
-            <div class="card mt-4" onclick="openImage('img/ganci1.png')">
-              <img src="img/ganci1.png" class="card-img-top" alt="" />
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <video controls>
+                <source src="vid/saturnus.mp4" type="video/mp4" />
+                Browsermu tidak mendukung tag ini, silahkan upgrade!
+              </video>
               <div class="card-body">
-                <p class="card-text" style="font-size: 15px">Desain Ganci Kegiatan Gabungan KDK Al-Karomah</p>
+                <p class="card-text" style="font-size: 15px">Pengetahuan Tentang Saturnus</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <video controls>
+                <source src="vid/travelmaps.mp4" type="video/mp4" />
+                Browsermu tidak mendukung tag ini, silahkan upgrade!
+              </video>
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Travel Maps</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <video controls>
+                <source src="vid/reminderkdk.mp4" type="video/mp4" />
+                Browsermu tidak mendukung tag ini, silahkan upgrade!
+              </video>
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Daily Reminder KDK Al-Karomah Uniska</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <video controls>
+                <source src="vid/alkahf.mp4" type="video/mp4" />
+                Browsermu tidak mendukung tag ini, silahkan upgrade!
+              </video>
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Reminder Al-Kahfi KDK Al-Karomah Uniska</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <video controls>
+                <source src="vid/sunset.mp4" type="video/mp4" />
+                Browsermu tidak mendukung tag ini, silahkan upgrade!
+              </video>
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Color Grading Sunset</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <video controls>
+                <source src="vid/minivlog.mp4" type="video/mp4" />
+                Browsermu tidak mendukung tag ini, silahkan upgrade!
+              </video>
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Mini Vlog - Morning Routine</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <video controls>
+                <source src="vid/stopmotion.mp4" type="video/mp4" />
+                Browsermu tidak mendukung tag ini, silahkan upgrade!
+              </video>
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Stop Motion Hari Kesehatan Nasional ke-56</p>
               </div>
             </div>
           </div>
@@ -454,6 +609,7 @@
       </div>
     </div>
   </section>
+  <!-- Akhir Video -->
   <!-- Akhir Projek -->
 
   <!-- Sertifikat -->
@@ -468,7 +624,7 @@
       <div class="col" style="overflow-x: auto; white-space: auto; height: 650px;">
         <div class="row">
           <div class="col-md-4 mb-4">
-            <div class="card" onclick="openImage('img/oprec.jpg')">
+            <div class="card" onclick="openImage('img/sertif/annive-re.png')">
               <img src="img/sertif/annive-re.png" class="card-img-top" alt="" />
               <div class="card-body">
                 <p class="card-text" style="font-size: 15px">Sekretaris Anniversary Ruang Edit ke-4 Regional Kalsel</p>
@@ -476,15 +632,16 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card" onclick="openImage('img/oprec.jpg')">
+            <div class="card" onclick="openImage('img/sertif/class-gd-myskill.jpg')">
               <img src="img/sertif/class-gd-myskill.jpg" class="card-img-top" alt="" />
               <div class="card-body">
-                <p class="card-text" style="font-size: 15px">Peserta Short Class Graphic Design Principles dari My Skill </p>
+                <p class="card-text" style="font-size: 15px">Peserta Short Class Graphic Design Principles dari My Skill
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card" onclick="openImage('img/oprec.jpg')">
+            <div class="card" onclick="openImage('img/sertif/class-uiux-myskill.jpg')">
               <img src="img/sertif/class-uiux-myskill.jpg" class="card-img-top" alt="" />
               <div class="card-body">
                 <p class="card-text" style="font-size: 15px">Peserta Short Class UI/UX Fundamental dari My Skill </p>
@@ -492,7 +649,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card" onclick="openImage('img/oprec.jpg')">
+            <div class="card" onclick="openImage('img/sertif/l-poster-hmpti.png')">
               <img src="img/sertif/l-poster-hmpti.png" class="card-img-top" alt="" />
               <div class="card-body">
                 <p class="card-text" style="font-size: 15px">Juara 3 Lomba Desain Poster dari HMPTI Uniska</p>
@@ -500,7 +657,15 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card" onclick="openImage('img/oprec.jpg')">
+            <div class="card" onclick="openImage('img/sertif/l-poster-hmpti.png')">
+              <img src="img/sertif/l-poster-hmpti2.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="card-text" style="font-size: 15px">Juara 3 Lomba Desain Poster dari HMPTI Uniska</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card" onclick="openImage('img/sertif/l-poster-faperta.png')">
               <img src="img/sertif/l-poster-faperta.png" class="card-img-top" alt="" />
               <div class="card-body">
                 <p class="card-text" style="font-size: 15px">Peserta Lomba Desain Poster dari BEM Faperta Uniska</p>
@@ -508,42 +673,46 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card" onclick="openImage('img/oprec.jpg')">
+            <div class="card" onclick="openImage('img/sertif/p-vcc-digitalent.jpg')">
               <img src="img/sertif/p-vcc-digitalent.jpg" class="card-img-top" alt="" />
               <div class="card-body">
-                <p class="card-text" style="font-size: 15px">Peserta Pelatihan Video Content Creator dari Digitalent Kominfo</p>
+                <p class="card-text" style="font-size: 15px">Peserta Pelatihan Video Content Creator dari Digitalent
+                  Kominfo</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card" onclick="openImage('img/oprec.jpg')">
+            <div class="card" onclick="openImage('img/sertif/p-cc-cies.jpg')">
               <img src="img/sertif/p-cc-cies.jpg" class="card-img-top" alt="" />
               <div class="card-body">
-                <p class="card-text" style="font-size: 15px">Peserta Workshop Be A Millenial by Spreading Knowledge Da'wah dari CCW</p>
+                <p class="card-text" style="font-size: 15px">Peserta Workshop Be A Millenial by Spreading Knowledge
+                  Da'wah dari CCW</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card" onclick="openImage('img/oprec.jpg')">
-              <img src="img/sertif/p-cc-cies.jpg" class="card-img-top" alt="" />
+            <div class="card" onclick="openImage('img/sertif/p-dg-faperta.jpg')">
+              <img src="img/sertif/p-dg-faperta.jpg" class="card-img-top" alt="" />
               <div class="card-body">
                 <p class="card-text" style="font-size: 15px">Peserta Pelatihan Desain Grafis dari BEM Faperta Uniska</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card" onclick="openImage('img/oprec.jpg')">
+            <div class="card" onclick="openImage('img/sertif/w-canva-re.png')">
               <img src="img/sertif/w-canva-re.png" class="card-img-top" alt="" />
               <div class="card-body">
-                <p class="card-text" style="font-size: 15px">Peserta Webinar Jalan Ninja Menguasai Canva di Dunia Profesional dari Ruang Edit</p>
+                <p class="card-text" style="font-size: 15px">Peserta Webinar Jalan Ninja Menguasai Canva di Dunia
+                  Profesional dari Ruang Edit</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card" onclick="openImage('img/oprec.jpg')">
+            <div class="card" onclick="openImage('img/sertif/w-pixellab-re.png')">
               <img src="img/sertif/w-pixellab-re.png" class="card-img-top" alt="" />
               <div class="card-body">
-                <p class="card-text" style="font-size: 15px">Peserta Webinar Optimalisasi Pixellab di Dunia Desain Grafis dari Ruang Edit</p>
+                <p class="card-text" style="font-size: 15px">Peserta Webinar Optimalisasi Pixellab di Dunia Desain
+                  Grafis dari Ruang Edit</p>
               </div>
             </div>
           </div>
